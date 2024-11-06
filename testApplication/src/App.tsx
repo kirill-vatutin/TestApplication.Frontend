@@ -30,7 +30,7 @@ function App() {
   return (
     <Layout className="app-layout">
       <Header className="app-header">
-        <h1>Items Management</h1>
+        <h1>TestApp</h1>
       </Header>
       <Content className="app-content" style={{ background: token.colorBgLayout }}>
         <ItemsTable onEditItem={handleEdit} onAddNew={handleAddNew} />
@@ -41,7 +41,7 @@ function App() {
         />
       </Content>
       <Footer className="app-footer">
-        Test Application ©{new Date().getFullYear()}
+        TestApp ©{new Date().getFullYear()}
       </Footer>
     </Layout>
   );
