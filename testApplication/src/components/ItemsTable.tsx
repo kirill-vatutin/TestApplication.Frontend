@@ -57,8 +57,8 @@ export const ItemsTable = ({ onEditItem, onAddNew }: ItemsTableProps) => {
         await dispatch(deleteItem(id)).unwrap();
         message.success('Item deleted successfully');
       }
-    } catch (error) {
-      message.error('Failed to delete item: ' + (error as Error).message);
+    } catch {
+      message.error('Failed to delete item: ');
     }
   };
 
